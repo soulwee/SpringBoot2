@@ -84,7 +84,7 @@ public class EmployeeService {
      * @return
      *
      */
-    @Cacheable(value = {"emp"}/*,keyGenerator = "myKeyGenerator",condition = "#a0>1",unless = "#a0==2"*/)
+    @Cacheable(value = {"emp"},keyGenerator = "myKeyGenerator",condition = "#a0>1",unless = "#a0==2")
     public Employee getEmp(Integer id){
         System.out.println("查询"+id+"号员工");
         Employee emp = employeeMapper.getEmpById(id);

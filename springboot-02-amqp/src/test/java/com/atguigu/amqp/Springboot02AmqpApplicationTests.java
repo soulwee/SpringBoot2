@@ -35,7 +35,7 @@ public class Springboot02AmqpApplicationTests {
 //		amqpAdmin.declareQueue(new Queue("amqpadmin.queue",true));
 		//创建绑定规则
 
-//		amqpAdmin.declareBinding(new Binding("amqpadmin.queue", Binding.DestinationType.QUEUE,"amqpadmin.exchange","amqp.haha",null));
+		amqpAdmin.declareBinding(new Binding("amqpadmin.queue", Binding.DestinationType.QUEUE,"amqpadmin.exchange","amqp.haha",null));
 
 		//amqpAdmin.de
 	}
